@@ -1,6 +1,12 @@
 (ns tests.core
   (:gen-class))
 
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, World!"))
+
+
 (defn sum-to-target? [num1 num2 target]
   (= target (+ num1 num2)))
 
@@ -18,3 +24,6 @@
       :else
       (recur (inc counter) (subvec vect 1))))
 )
+
+(defn testmain []
+  (+ 1 1))
